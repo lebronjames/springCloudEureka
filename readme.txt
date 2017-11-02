@@ -6,8 +6,15 @@ spring-cloud-starter-eureka-server
 server:
   port: 1111
 eureka:
+  instance:
+    hostname: peer1
   client:
-    register-with-eureka: false
-    fetch-registry: false
+  #是否注册自身到eureka服务器
+    register-with-eureka: true
+  #是否从eureka服务器获取注册信息
+    fetch-registry: true
     serviceUrl:
-      defaultZone: http://localhost:${server.port}/eureka/
+      defaultZone: http://peer2:1112/eureka/
+      
+      
+http://10.5.2.241:1111/
