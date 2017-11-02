@@ -16,5 +16,5 @@ eureka:
     serviceUrl:
       defaultZone: http://peer2:1112/eureka/
       
-      
+Eureka Server的同步遵循着一个非常简单的原则：只要有一条边将节点连接，就可以进行信息传播与同步
 http://10.5.2.241:1111/

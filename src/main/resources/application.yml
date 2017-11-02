@@ -12,4 +12,4 @@ eureka:
   #是否从eureka服务器获取注册信息
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://peer2:1112/eureka/
+      defaultZone: http://10.5.2.241:1112/eureka/
